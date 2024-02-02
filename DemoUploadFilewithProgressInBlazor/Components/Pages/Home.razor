@@ -1,0 +1,27 @@
+﻿@page "/"
+@using NetcodeHub.Packages.Components.FileUpload.FileUploadWithProgressbar
+@rendermode InteractiveServer
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+<FileUpload @ref="FileUploadComponent" Notify="RetrieveContent" />
+    
+<div class="alert alert-danger">
+    @Errors
+</div>
+
+@code {
+    FileUpload? FileUploadComponent;
+    string? Errors;
+    IList<IBrowserFile>? Files { get; set; } = new List<IBrowserFile>();
+
+    void RetrieveContent(IReadOnlyList<IBrowserFile>? incomingFiles)
+    {
+        if (incomingFiles is not null)
+        {
+            foreach (var item in incomingFiles!)
+                Files!.Add(item);
+        }
+        Errors = FileUploadComponent!.GetErrors();
+    }
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34407.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUploadFilewithProgressInBlazor", "DemoUploadFilewithProgressInBlazor\DemoUploadFilewithProgressInBlazor.csproj", "{66412583-DAED-4280-9153-05AB0053C02B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66412583-DAED-4280-9153-05AB0053C02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66412583-DAED-4280-9153-05AB0053C02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66412583-DAED-4280-9153-05AB0053C02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66412583-DAED-4280-9153-05AB0053C02B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A334D44-D7E7-493F-84D6-DA3B3CA5D93E}
+	EndGlobalSection
+EndGlobal
